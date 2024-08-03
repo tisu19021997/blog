@@ -10,13 +10,6 @@ const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
 
   return (
     <div class={displayClass}>
-      {url && (
-        <div class="url">
-          <a href={url} class="external url-link">
-            {url}
-          </a>
-        </div>
-      )}
       {tags && tags.length > 0 && (
         <ul class={classNames(displayClass, "tags")}>
           {tags.map((tag) => {
@@ -30,6 +23,13 @@ const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
             )
           })}
         </ul>
+      )}
+      {url && (
+        <div class="url">
+          <a href={url} target="_blank" class="external url-link">
+            {url}
+          </a>
+        </div>
       )}
     </div>
   )

@@ -2,6 +2,7 @@
 tags:
   - on/book
   - on/movie
+  - on/art
 ---
 i love both the movie and the book. am i Forrest Gump? i can't tell.
 

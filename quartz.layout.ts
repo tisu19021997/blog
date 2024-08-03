@@ -26,14 +26,24 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
-    // Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
-    Component.RecentNotes({ title: "recently", showTags: false }),
+    Component.Darkmode(),
+    Component.DesktopOnly(
+      Component.Explorer({ folderClickBehavior: "link", folderDefaultState: "collapsed" }),
+    ),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Latest",
+        showTags: false,
+        limit: 1,
+        linkToMore: "/tags" as SimpleSlug,
+      }),
+    ),
   ],
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.MobileOnly(Component.RecentNotes({ title: "Recently", showTags: false })),
   ],
 }
 
@@ -44,8 +54,18 @@ export const defaultListPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
-    // Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.Darkmode(),
+    Component.DesktopOnly(
+      Component.Explorer({ folderClickBehavior: "link", folderDefaultState: "collapsed" }),
+    ),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Latest",
+        showTags: false,
+        limit: 1,
+        linkToMore: "/tags" as SimpleSlug,
+      }),
+    ),
   ],
   right: [],
 }

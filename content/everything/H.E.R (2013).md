@@ -1,6 +1,7 @@
 ---
 tags:
   - on/movie
+  - on/art
 rating: "9"
 ---
 Samantha

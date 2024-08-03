@@ -1,7 +1,7 @@
 ---
-title: Me as an Asian
 tags:
   - on/random
+  - on/self
 ---
 
 "Why Asian people are almost always more shy than Western people?" - me asking myself

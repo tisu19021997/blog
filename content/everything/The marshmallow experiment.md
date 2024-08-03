@@ -13,4 +13,4 @@ url: https://www.youtube.com/watch?v=HfubTWPBKTI
 	- Each person have a baseline happiness, when you do **instant gratification**, your level of happiness has a spike. But after that, your **baseline happiness is lower**.
 	- When doing delayed gratification, your level of happiness is lowered, but then it bounces back and **increases your baseline happiness a little.**
 
-> So, avoid instant gratification and start doing things that good for your future self guys.
+So, avoid instant gratification and start doing things that good for your future self guys.

@@ -1,7 +1,7 @@
 ---
-title: Hypothetical Document Embeddings (HyDE)
 tags:
   - on/llm/rag
+  - on/science
 ---
 2 phases system:
 1. Generate a hypothetical answer (from user query):

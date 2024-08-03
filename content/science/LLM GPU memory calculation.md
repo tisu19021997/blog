@@ -1,7 +1,7 @@
 ---
-title: LLM GPU memory calculation
 tags:
   - on/llm
+  - on/science
 url: https://huggingface.co/docs/transformers/perf_train_gpu_one#anatomy-of-models-memory
 ---
 Computation

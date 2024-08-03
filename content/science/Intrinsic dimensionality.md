@@ -1,6 +1,8 @@
 ---
 tags:
   - on/linear-algebra
+  - on/science
+  - is/definition
 url: https://mbernste.github.io/posts/intrinsic_dimensionality/
 ---
 > [!Summary]
@@ -19,4 +21,4 @@ url: https://mbernste.github.io/posts/intrinsic_dimensionality/
 - Although the space below is 3D, we can represent each point on the paper with only 2 pieces of information (in red).
 	- We can infer the the 3D coordinate from the 2D point.
 
-[[Low-rank Adaption (LoRA) of Large Language Models]]
+Related: [[science/LoRA|Low-rank Adaption (LoRA)]]

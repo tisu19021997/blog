@@ -10,7 +10,7 @@ import { i18n } from "../i18n"
 
 // Options interface defined in `ExplorerNode` to avoid circular dependency
 const defaultOptions = {
-  folderClickBehavior: "link",
+  folderClickBehavior: "collapse",
   folderDefaultState: "collapsed",
   useSavedState: true,
   mapFn: (node) => {
@@ -84,7 +84,7 @@ export default ((userOpts?: Partial<Options>) => {
     constructFileTree(allFiles)
     return (
       <div class={classNames(displayClass, "explorer")}>
-        {/* <button
+        <button
           type="button"
           id="explorer"
           data-behavior={opts.folderClickBehavior}
@@ -93,21 +93,7 @@ export default ((userOpts?: Partial<Options>) => {
           data-tree={jsonTree}
         >
           <h1>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h1>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="14"
-            height="14"
-            viewBox="5 8 14 8"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="fold"
-          >
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button> */}
+        </button>
         <div id="explorer-content">
           <ul class="overflow" id="explorer-ul">
             <ExplorerNode node={fileTree} opts={opts} fileData={fileData} />

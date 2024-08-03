@@ -1,5 +1,4 @@
 ---
-title: Random thought at Sephora
 tags:
   - on/random
   - on/self
