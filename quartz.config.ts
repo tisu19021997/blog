@@ -8,15 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "tisu's mind",
+    pageTitle: "_tisu",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "https://tisu19021997.github.io/blog/",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "tisu19021997.github.io/blog",
+    ignorePatterns: ["private", "templates"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

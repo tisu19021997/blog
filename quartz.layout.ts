@@ -35,9 +35,17 @@ export const defaultContentPageLayout: PageLayout = {
         title: "Latest",
         showTags: false,
         limit: 1,
-        linkToMore: "/tags" as SimpleSlug,
+        linkToMore: "tags/on/" as SimpleSlug,
       }),
     ),
+    // Component.DesktopOnly(
+    //   Component.RecentNotes({
+    //     title: "Science",
+    //     showTags: false,
+    //     limit: 1,
+    //     linkToMore: "tags/on/" as SimpleSlug,
+    //   }),
+    // ),
   ],
   right: [
     Component.Graph(),
@@ -55,17 +63,6 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(
-      Component.Explorer({ folderClickBehavior: "link", folderDefaultState: "collapsed" }),
-    ),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "Latest",
-        showTags: false,
-        limit: 1,
-        linkToMore: "/tags" as SimpleSlug,
-      }),
-    ),
   ],
   right: [],
 }
