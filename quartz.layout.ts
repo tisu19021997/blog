@@ -35,7 +35,7 @@ export const defaultContentPageLayout: PageLayout = {
         title: "Latest",
         showTags: false,
         limit: 1,
-        linkToMore: "tags/on/" as SimpleSlug,
+        linkToMore: "tags/on" as SimpleSlug,
       }),
     ),
     // Component.DesktopOnly(
