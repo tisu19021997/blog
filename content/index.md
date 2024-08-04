@@ -1,5 +1,5 @@
 ---
-title: what's on my mind
+title: about _me
 ---
 
 [i](/tags/on/self) love [coding, science](tags/on/science) and [the world](tags/on)

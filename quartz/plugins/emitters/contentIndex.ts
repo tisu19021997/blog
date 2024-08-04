@@ -8,6 +8,7 @@ import { toHtml } from "hast-util-to-html"
 import { write } from "./helpers"
 import { i18n } from "../../i18n"
 import DepGraph from "../../depgraph"
+import { withPostfix } from "../../util/format"
 
 export type ContentIndex = Map<FullSlug, ContentDetails>
 export type ContentDetails = {
@@ -52,7 +53,7 @@ function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndex, limit?: nu
   const base = cfg.baseUrl ?? ""
 
   const createURLEntry = (slug: SimpleSlug, content: ContentDetails): string => `<item>
-    <title>${escapeHTML(content.title)}</title>
+    <title>${withPostfix(escapeHTML(content.title))}</title>
     <link>https://${joinSegments(base, encodeURI(slug))}</link>
     <guid>https://${joinSegments(base, encodeURI(slug))}</guid>
     <description>${content.richContent ?? content.description}</description>
